@@ -31,7 +31,7 @@ const Layout = ({ children, data }) => (
           }
         }
 
-      markdownRemark(frontmatter: {path: { eq: "/" }}) {
+      markdownRemark(frontmatter: {type: { eq: "home" }}) {
       html
       frontmatter {
         path
