@@ -1,0 +1,7 @@
+a.external-link {
+  display: inline-block;
+  margin-right: 10px;
+  &:after {
+    content: url('./../files/icons/externalLink.svg');
+  }
+}
