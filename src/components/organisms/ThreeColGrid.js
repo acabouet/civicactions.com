@@ -2,7 +2,7 @@ import React from "react";
 
 const ThreeColGrid = ({ items }) => {
   const gridItems = items.map((item, index) => {
-    const{ title, text, image } = item;
+    const{ title, image } = item;
     let imageUrl = image ? image.childImageSharp.resize.src : '';
 
     return(
@@ -20,4 +20,8 @@ const ThreeColGrid = ({ items }) => {
 };
 
 export default ThreeColGrid;
+
+ThreeColGrid.propTypes = {
+  items: PropTypes.object
+}
 
